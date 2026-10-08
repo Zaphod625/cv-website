@@ -10,18 +10,6 @@
   --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #14151a;
-    --sidebar-bg: #191a1f;
-    --text: #e9e8e4;
-    --muted: #9a9a95;
-    --accent: #e2a07d;
-    --border: #2b2c33;
-    --surface: #1c1d23;
-  }
-}
-
 * {
   box-sizing: border-box;
 }
@@ -35,7 +23,7 @@ body {
   display: flex;
   min-height: 100vh;
   font-family: var(--font-body);
-  background: var(--bg);
+  background: var(--bg) url("assets/noise.png");
   color: var(--text);
   line-height: 1.65;
 }
@@ -61,7 +49,7 @@ h1, h2, h3 {
   position: sticky;
   top: 0;
   height: 100vh;
-  background: var(--sidebar-bg);
+  background: var(--sidebar-bg) url("assets/noise.png");
   border-right: 1px solid var(--border);
   padding: 2.5rem 2rem;
   display: flex;
