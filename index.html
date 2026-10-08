@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ethan Mearns — CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <aside id="sidebar">
+    <div class="profile">
+      <img src="assets/profile.jpg" alt="Ethan Mearns" class="profile-photo">
+      <h1>Ethan Mearns</h1>
+      <p class="tagline">Final Year Computer Engineering Student</p>
+      <a href="assets/ethan-mearns-resume.pdf" download class="resume-button">Download Résumé</a>
+    </div>
+
+    <nav id="navbar">
+      <ul>
+        <li><a href="#about" class="nav-link">About Me</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#hobbies" class="nav-link">Hobbies</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <ul class="social-links">
+      <li><a href="mailto:mearnsethan@gmail.com">mearnsethan@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/ethan-mearns">linkedin.com/in/ethan-mearns</a></li>
+      <li><a href="https://github.com/Zaphod625">GitHub</a></li>
+    </ul>
+  </aside>
+
+  <main>
+    <section id="about">
+      <p class="eyebrow">01 — Introduction</p>
+      <h2>About Me</h2>
+      <p>I am a final year Computer Engineering student. My final-year project applies OCR and machine learning to the Ancient Greek papyri of the Oxyrhynchus collection. I'm drawn to roles at the intersection of software engineering and applied machine learning — full-stack work that turns real, messy data into something useful. I am eager to contribute to innovative projects while continuing to learn and grow in a professional environment.</p>
+    </section>
+
+    <section id="education">
+      <p class="eyebrow">02 — Education</p>
+      <h2>Education</h2>
+      <article>
+        <div class="entry-head">
+          <h3>Computer Engineering</h3>
+          <span class="date">Expected 2026</span>
+        </div>
+        <p class="entry-subtitle">University of Pretoria — Bachelor of Engineering, currently final year</p>
+        <p>My academic focus has centred on software engineering and applied machine learning. Coursework in data structures and algorithms, software engineering, and digital communications built the foundation, and my final-year project — OCR and machine learning on the Oxyrhynchus papyri — let me apply that to a real, messy dataset end to end: building the models, evaluating them properly, and getting the whole pipeline to actually run, not just work in a notebook.</p>
+      </article>
+      <article>
+        <div class="entry-head">
+          <h3>De La Salle Holy Cross College</h3>
+          <span class="date">2020</span>
+        </div>
+        <p>Matriculated with distinctions in Mathematics (90%) and Physical Sciences (80%). Awarded full colours for swimming, half colours for football, and academic half colours.</p>
+      </article>
+    </section>
+
+    <section id="experience">
+      <p class="eyebrow">03 — Experience</p>
+      <h2>Experience</h2>
+      <article>
+        <div class="entry-head">
+          <h3>Software Development Intern</h3>
+          <span class="date">Jan 2025</span>
+        </div>
+        <p class="entry-subtitle">Centurion Systems</p>
+        <p>Developed a student grading console application using C# that processed assignment scores and calculated letter grades. Built a .NET MAUI to-do list application implementing MVVM architecture, featuring task management functionality with add, delete, and completion tracking capabilities. Gained practical experience with XAML for UI design, data binding concepts, and frameworks including Entity Framework Core and Prism.</p>
+      </article>
+      <article>
+        <div class="entry-head">
+          <h3>Software Development Observer</h3>
+          <span class="date">Dec 2023</span>
+        </div>
+        <p class="entry-subtitle">Yellow Dog Software</p>
+        <p>Observed the complete software development lifecycle from client requirements gathering through testing, feedback collection, and final release. Gained exposure to collaborative development practices and the importance of ongoing maintenance including bug fixes and system updates after project completion.</p>
+      </article>
+    </section>
+
+    <section id="projects">
+      <p class="eyebrow">04 — Projects</p>
+      <h2>Projects</h2>
+      <article>
+        <div class="entry-head">
+          <h3>Oxyrhynchus Papyri — OCR &amp; Machine Learning</h3>
+          <span class="date">Final-Year Project</span>
+        </div>
+        <img src="assets/oxyrhynchus-ocr.jpg" alt="A papyrus fragment of handwritten Ancient Greek text from the Oxyrhynchus collection">
+        <p>My final-year engineering project: a from-scratch OCR and machine learning pipeline that reads Ancient Greek handwriting on the Oxyrhynchus papyri. The recognition engine — line segmentation, character detection, and classification networks, plus the CUDA matrix-multiply kernel they run on — is all custom-built rather than using off-the-shelf OCR. Decoding can optionally lean on a Homer-aware language model (many fragments are Iliad text) to correct recognition errors against the known edition, and the whole pipeline is deployed to run on a Jetson Nano for on-device inference, with a web demo for inspecting segmentation, detections, and decoded text against ground truth line by line. Still in progress — I'm currently writing up the final report.</p>
+      </article>
+      <article>
+        <div class="entry-head">
+          <h3>Los Alamos — Chess Variant</h3>
+          <span class="date">EPE321</span>
+        </div>
+        <div class="image-row">
+          <img src="assets/los-alamos-board.png" alt="The Los Alamos Chess 6x6 board in the running game — no bishops, playing against the AI">
+          <img src="assets/los-alamos-dashboard.png" alt="The Los Alamos Chess dashboard — play vs computer, play online, play a friend, or learn">
+        </div>
+        <p>A chess variant played on a smaller board with no bishops, built as a group Software Engineering project (EPE321, University of Pretoria) with a 5-person team, including formal design documentation (SRS, class diagrams, activity diagrams). My role: backend/server development using Node.js and WebSockets.</p>
+        <p class="entry-link"><a href="https://github.com/Zaphod625/EPE321">View on GitHub →</a></p>
+      </article>
+      <article>
+        <div class="entry-head">
+          <h3>Line-Following Race Car</h3>
+          <span class="date">EMK310</span>
+        </div>
+        <video autoplay muted loop playsinline poster="assets/assembly-car.jpg" src="assets/assembly-car.mp4">
+          <a href="assets/assembly-car.mp4">Watch the video</a>
+        </video>
+        <p>A line-following car built in Assembly for a university embedded systems module (EMK310), with a 4-person team. Worked collaboratively across the full system — PWM motor control, light sensor input, and the overall build.</p>
+        <p class="entry-link"><a href="https://github.com/Zaphod625/AssemblyCar">View on GitHub →</a></p>
+      </article>
+    </section>
+
+    <section id="skills">
+      <p class="eyebrow">05 — Skills</p>
+      <h2>Skills</h2>
+      <p>My toolkit spans embedded and systems programming, full-stack web development, and applied machine learning — Assembly and C++ on one end, Python, NumPy, and CUDA on the other, with C#, Java, and JavaScript in between. I'd rather pick up what a project needs than stay narrowly specialised this early on.</p>
+
+      <h3 class="skills-group">Languages</h3>
+      <ul class="tag-list">
+        <li>C++</li>
+        <li>C#</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>Assembly</li>
+      </ul>
+
+      <h3 class="skills-group">Frameworks &amp; Tools</h3>
+      <ul class="tag-list">
+        <li>.NET MAUI</li>
+        <li>Entity Framework Core</li>
+        <li>Node.js</li>
+        <li>WebSockets</li>
+        <li>NumPy</li>
+        <li>CUDA</li>
+        <li>Git</li>
+      </ul>
+
+      <h3 class="skills-group">Core Strengths</h3>
+      <ul class="tag-list">
+        <li>Problem Solving</li>
+        <li>Time Management</li>
+        <li>Attention to detail</li>
+        <li>Adaptability</li>
+        <li>Strong Communication</li>
+        <li>Disciplined</li>
+      </ul>
+    </section>
+
+    <section id="hobbies">
+      <p class="eyebrow">06 — Hobbies</p>
+      <h2>Hobbies</h2>
+      <ul class="tag-list">
+        <li>Swimming</li>
+        <li>Climbing</li>
+        <li>Football</li>
+        <li>Chess</li>
+        <li>Birding</li>
+        <li>Gaming</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <p class="eyebrow">07 — Contact</p>
+      <h2>Contact</h2>
+      <ul class="contact-list">
+        <li><span class="label">Email</span><a href="mailto:mearnsethan@gmail.com">mearnsethan@gmail.com</a></li>
+        <li><span class="label">LinkedIn</span><a href="https://www.linkedin.com/in/ethan-mearns">linkedin.com/in/ethan-mearns</a></li>
+        <li><span class="label">GitHub</span><a href="https://github.com/Zaphod625">github.com/Zaphod625</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
